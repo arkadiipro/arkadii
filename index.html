@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>gg</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class = "main-container">
+            <div class="box1">
+                <canvas id = "canvas" width = "400" height = "400" ></canvas>
+                <p>
+                    Тут потрібно управлять стрілками
+                </p>
+            </div>
+            <div class="box2" >
+                
+                <h1 id = "heading">Управление:</h1>
+                <button id = "makeX">Змінити розмір поля (ширина)</button>
+                <button id = "makeY">Змінити розмір поля (висота)</button>
+                <button id = "start">Почати гру</button>
+                <p id = "attempts">Attempts : 0</p>
+                <p>Timer:</p>
+                <p id="sec">0<p>
+                <p>Best time:</p>
+                <p id = "best">0</p>
+                </div>
+            <div class="box3">
+                <form class="radio-column" >
+                    <p>Виберіть скільки кульок треба</p>
+                    <label>
+                        <input type="radio" name="ball" value="1" checked>1
+                    </label>
+
+                    <label>
+                        <input type="radio" name="ball" value="2" >2
+                    </label>
+
+                    <label>
+                        <input type="radio" name="ball" value="3">3
+                    </label>
+
+                     <label>
+                        <input type="radio" name="ball" value="4">4
+                    </label>
+
+                    <label>
+                        <input type="radio" name="ball" value="5">5
+                    </label>
+
+                </form>
+            </div>
+            <div class="box4">
+                <form class="radio-column" >
+                    <p>Виберіть рівень швидкості</p>
+                
+                    <label >
+                        <input type="radio" id="1" name="level" value="70">До 70 px в секунду
+                    </label> 
+                    <!-- 5-2 -->
+                    <label >
+                        <input type="radio" id="1" name="level" value="100" checked>До 100 px в секунду
+                    </label>
+                    <!-- 7-3 --> 
+                    <label >
+                        <input type="radio" id="1" name="level" value="130">До 130 px в секунду
+                    </label>
+                    <!-- 9-4 -->
+                </form>
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
