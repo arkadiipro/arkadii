@@ -1,0 +1,100 @@
+   
+        * {
+          background-color: black;
+          box-sizing: border-box;
+      }
+
+      
+      .main-container {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding: 20px;
+          width: 100%;
+          gap: 15px;
+      }
+
+      
+      .box {
+          flex: 1; 
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+      }
+
+      
+      .box1 { align-items: flex-start; } /* Canvas зліва */
+      .box2 { align-items: center; text-align: center; } /* Кнопки по центру */
+      .box3 { align-items: center; color: yellowgreen; } /* Кульки */
+      .box4 { align-items: flex-end; color: yellowgreen; } /* Швидкість справа */
+
+      
+      #canvas {
+          border: 3px solid yellow;
+      }
+
+      #heading, p, label {
+          color: yellowgreen;
+          margin-bottom: 10px;
+      }
+
+      button {
+          padding: 12px 20px;
+          font-size: 14px;
+          color: yellowgreen;
+          background: black;
+          border: 1px solid yellowgreen;
+          margin: 5px;
+          cursor: pointer;
+          width: 100%; /* Кнопки в блоці управління на всю його ширину */
+          max-width: 250px;
+      }
+
+      button:hover {
+          background: #333;
+          color: white;
+      }
+
+      
+      .radio-row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px;
+          justify-content: center;
+      }
+
+      
+      .radio-column {
+              display: flex;
+              flex-direction: column; /* Ставить елементи у стовпчик */
+              align-items: flex-start; /* Притискає їх до лівого краю */
+              gap: 10px;               /* Відступ між рядками */
+          }
+
+      
+      .radio-row {
+          display: flex;
+          flex-direction: column; /* Вишиковує в ряд */
+          flex-wrap: wrap;     /* Перенос на новий рядок, якщо не влазять */
+          gap: 15px;           /* Відступ між кнопками */
+          justify-content: center;
+      }
+
+      /* Стиль для самих кружечків */
+      input[type="radio"] {
+          accent-color: yellow; /* Робить кружечок жовтим */
+          cursor: pointer;
+          width: 18px;          /* Можна трохи збільшити розмір */
+          height: 18px;
+      }
+
+      /* Стиль тексту біля радіокнопок */
+      .radio-row label {
+          color: yellowgreen;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 5px; /* Відступ між кружечком і цифрою */
+      }
+
